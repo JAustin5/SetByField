@@ -58,7 +58,7 @@ type Sort interface {
 	sortingPos() []Actors
 }
 
-// Sort interface method taking 2nd command-line arg. as a paramter to sort Actors class
+// Sort interface method taking 2nd command-line arg. as a parameter to sort Actors class
 func (acts *Actors) sortingPos(num int) {
 	if num == 0 {
 		sort.SliceStable(acts.actor_slice, func(i, j int) bool {
